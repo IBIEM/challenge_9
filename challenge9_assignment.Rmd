@@ -1,0 +1,158 @@
+---
+title: "Challenge 9"
+subtitle: "Everything is relative"
+output:
+  html_document:
+    df_print: paged
+---
+# Relative Abundance Challenges
+## Setup 
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, include=TRUE)
+```
+
+## Background
+The goal of these problems is to give you experience with transforming data, relative abundance plots, and pruning taxa.
+
+## Resources
+These challenges are based on the [Relative Abundance Lesson](https://gitlab.oit.duke.edu/IBIEM/IBIEM_2018_2019/blob/master/content/lessons/relative_abundance.md), which will give you starting points for most of the problems  
+
+## Data
+For all of these problems you will be using the lemur data phyloseq RDS that is available at `/data/tutorial_data/challenge6_lemur_subset.rds`.
+
+## Completing and Submitting
+You must fill in the chunks below as indicated, but you are free to add other chunks too.  To submit this assignment for full credit you should *commit* and *push*:
+
+1. This file (`challenge9_assignment.Rmd`)
+2. The knited version of this file (`challenge9_assignment.html`)
+
+These are the *ONLY* files you should include in your repo.  I strongly recommend that you put temporary files in a *scratch* directory, for example `/home/guest/scratch/challenge9`.  If you don't follow this advice, but instead put temporary files in your repo directory, you *must* be sure not to commit them to your repo. You will lose points if you commit any other files.
+
+
+# Challenge Chunks
+## Load Libraries
+```{r}
+
+```
+
+## Define Paths
+```{r}
+
+```
+
+## Check Phyloseq RDS
+Load your phyloseq RDS and `print` it just to be sure things look sane
+```{r}
+
+```
+
+## Transform OTU table
+Our OTU tables are currently raw counts
+
+The first step in making relative abundance plots is to transform your OTU table from raw counts to relative abundance (also known as proportional or fractional abundance).  Phyloseq provides the `transform_sample_counts` function for performing user defined transformations on the OTU table.  We want to divide the counts for each OTU in each sample by the total number of counts for that sample.  The phyloseq object returned will have fractional "counts".  Be sure to assign the transformed phyloseq object to a different variable since we will need the untransformed data later.
+
+```{r}
+
+```
+
+Now do a sanity check to be sure that the `otu_table` "counts" are proportional.  You could do this by summing the per sample counts, or just looking at some of the count values.
+
+```{r}
+
+```
+
+## Basic Relative Abundance Plot
+You can also make a basic relative abundance plot for validation.  For this plot show *all* taxa (i.e. don't prune)
+
+```{r}
+
+```
+
+## Relative Abundance Plots, Taxa Coloring
+### Relative Abundance Plot: Phylum Level
+
+As with the absolute abundance plots, we can color the bars by taxa.  Make a relative abundance plot with bars colored at the *Phylum level*
+
+```{r}
+
+```
+
+### Relative Abundance Plot: Family Level
+Now make a relative abundance plot with bars colored at the *Family level*
+
+```{r}
+
+```
+
+## Pruning Taxa
+### TopN Taxa Pruning
+Let's play with pruning taxa to make plots more manangeable.  Let's start by pruning all but the 35 taxa with the most counts. 
+First identify the top 35 taxa
+
+```{r}
+
+```
+
+Now generate a new phyloseq object by pruning all but the top 35 taxa from the phyoseq object that has proportional "counts"
+```{r}
+
+```
+
+Print a summary of the pruned phyloseq object to confirm that taxa were pruned
+```{r}
+
+```
+
+#### Pruned Relative Abundance Plot
+Now make a relative abundance plot for the "top 35" pruned data, with bars colored at the *Family level*
+
+```{r}
+
+```
+
+### Per Sample Fractional Abundance Pruning
+Let's try a different approach to pruning: we will require that each taxon contstitutes at least 2% of the counts in each of at least 5 of the samples.  
+```{r}
+
+```
+
+Show how many taxa there are before and after pruning
+```{r}
+
+```
+
+Now make a relative abundance plot for the taxa pruned phyloseq that you just made.  Color the bars at the *Family level*
+
+```{r}
+
+```
+
+### Per Sample Absolute Abundance Pruning
+Now lets require that each taxon contstitutes at least 5 of the counts in each of at least 10 of the samples.  Show how many taxa there are before and after pruning.  
+
+```{r}
+
+```
+
+
+Now make a relative abundance plot for the taxa pruned phyloseq that you just made.  Color the bars at the *Family level*. Remember that we are *pruning* based on *absolute abundance*, but we still want to plot *relative abundance*
+
+```{r}
+
+```
+
+Now let's take that last plot and facet it based on one of the parameters
+```{r}
+
+```
+
+Is there a risk that this pruning approach could disproportionately affect some samples?
+
+# sessionInfo
+It is always a good idea to capture the sessionInfo information so you know what versions of R and libraries you used!
+```{r echo=TRUE, include=TRUE}
+sessionInfo()
+```
+
+
