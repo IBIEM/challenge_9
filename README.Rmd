@@ -1,15 +1,8 @@
----
-title: "Challenge 9: Everything is relative"
-output:
-  md_document:
-  variant: markdown_github
----
-
-# Challenge 9: Everything is relative
+# Challenge 10: Everything is relative
 - *Assigned: March 1, 2019*
 - *Due: at 6pm on March 22, 2019*
 
-# Assignment
+## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
 
 The goal of this challenge is to give you experience with alpha diversity.
@@ -18,13 +11,13 @@ You will need to:
 
 1. Initialize a new project in RStudio based on this repository (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#initialize-a-new-project))
 
-2. Fill the blank R code chunks in [challenge9_assignment.Rmd](challenge9_assignment.Rmd)
+2. Fill the blank R code chunks in [challenge10_assignment.Rmd](challenge10_assignment.Rmd)
 
-3. Modify the header of [challenge9_assignment.Rmd](challenge9_assignment.Rmd) (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#modify-the-header)
+3. Modify the header of [challenge10_assignment.Rmd](challenge10_assignment.Rmd) (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#modify-the-header)
 
 4. Submit the Assignment (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#submitting-the-assignment) ).  You should submit the following:
-    - `challenge9_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
-    - `challenge9_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
+    - `challenge10_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
+    - `challenge10_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
 
 
 5. Optional (but *strongly* recommended): frequently commit changes and push to GitHub.
