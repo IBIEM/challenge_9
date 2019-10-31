@@ -1,6 +1,6 @@
 # Challenge 10: Everything is relative
-- *Assigned: March 1, 2019*
-- *Due: at 6pm on March 22, 2019*
+- *Assigned: November 1, 2019*
+- *Due: at 6pm on November 22, 2019*
 
 ## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
