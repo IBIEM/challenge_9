@@ -1,5 +1,5 @@
 ---
-title: "Challenge 9"
+title: "Challenge 10"
 subtitle: "Everything is relative"
 output:
   html_document:
@@ -19,15 +19,15 @@ The goal of these problems is to give you experience with transforming data, rel
 These challenges are based on the [Relative Abundance Lesson](https://gitlab.oit.duke.edu/IBIEM/IBIEM_2018_2019/blob/master/content/lessons/relative_abundance.md), which will give you starting points for most of the problems  
 
 ## Data
-For all of these problems you will be using the lemur data phyloseq RDS that is available at `/data/tutorial_data/challenge6_lemur_subset.rds`.
+For all of these challenges you will be using a lemur data phyloseq RDS generated from a subset of the data.  It is available at `/data/tutorial_data/lemur_subset_phyloseq.rds`.
 
 ## Completing and Submitting
 You must fill in the chunks below as indicated, but you are free to add other chunks too.  To submit this assignment for full credit you should *commit* and *push*:
 
-1. This file (`challenge9_assignment.Rmd`)
-2. The knited version of this file (`challenge9_assignment.html`)
+1. This file (`challenge10_assignment.Rmd`)
+2. The knited version of this file (`challenge10_assignment.html`)
 
-These are the *ONLY* files you should include in your repo.  I strongly recommend that you put temporary files in a *scratch* directory, for example `/home/guest/scratch/challenge9`.  If you don't follow this advice, but instead put temporary files in your repo directory, you *must* be sure not to commit them to your repo. You will lose points if you commit any other files.
+These are the *ONLY* files you should include in your repo.  I strongly recommend that you put temporary files in a *scratch* directory, for example `~/scratch/challenge10`.  If you don't follow this advice, but instead put temporary files in your repo directory, you *must* be sure not to commit them to your repo. You will lose points if you commit any other files.
 
 
 # Challenge Chunks
